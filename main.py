@@ -20,6 +20,11 @@ class MapHandler(webapp2.RequestHandler):
 
 class MainHandler(webapp2.RequestHandler):
 <<<<<<< HEAD
+	def get(self):  # for a get request
+		welcome_template = the_jinja_env.get_template('Templates/home.html')
+		self.response.write(welcome_template.render())   # the response
+=======
+<<<<<<< HEAD
   def get(self):  # for a get request
     self.response.write('Greetings!')  # the response
 =======
@@ -27,6 +32,7 @@ class MainHandler(webapp2.RequestHandler):
 		welcome_template = the_jinja_env.get_template('Templates/home.html')
 		self.response.write(welcome_template.render())   # the responseb687dd05955f68251806cdab733489c7f0a9d898
 >>>>>>> 471b61efeacec76ec1ec3afb85c736ca9141c6c0
+>>>>>>> 813e46680e2e90c81b5c0b49ae95f6faf8ebbe70
 
 
 # the app configuration section	
