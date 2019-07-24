@@ -1,0 +1,135 @@
+h1 {
+	font-family:"Arial Black", Gadget, sans-serif;
+  color: green;
+}
+
+text {
+	font-family:Arial, Helvetica, sans-serif;
+  color: green;
+}
+
+
+body {
+	
+}
+
+#burger {
+	position: absolute;
+  left: 8px;
+  top: 880px;
+  box-shadow: 0px 0px 10px white;
+}
+
+#pizza {
+	position: absolute;
+  left: 8px;
+  top: 1100px;
+  box-shadow: 0px 0px 10px white;
+}
+
+#fries {
+	position: absolute;
+  left: 8px;
+  top: 1320px;
+  box-shadow: 0px 0px 10px white;
+}
+
+#salmon {
+	position: absolute;
+  left: 8px;
+  top: 1700px;
+  box-shadow: 0px 0px 10px white;
+}
+
+#apple {
+	position: absolute;
+  left: 8px;
+  top: 1920px;
+  box-shadow: 0px 0px 10px white;
+}
+
+#chickenb {
+	position: absolute;
+  left: 8px;
+  top: 2140px;
+  box-shadow: 0px 0px 10px white;
+}
+
+#hfoods  {
+	position: absolute;
+  left: 600px;
+  top: 1550px;
+}
+
+#hfoodtext{
+	position: absolute;
+	left: 400px;
+  top: 1640px;
+}
+
+#burgerc {
+	position: absolute;
+  left: 270px;
+  top: 950px;
+}
+
+#pizzac {
+	position: absolute;
+  left: 285px;
+  top: 1180px;
+}
+
+#friesc {
+	position: absolute;
+  left: 290px;
+  top: 1390px;
+}
+
+#salmonc {
+	position: absolute;
+  left: 290px;
+  top: 1775px;
+}
+
+#applec {
+  position: absolute;
+  left: 290px;
+  top: 1990px;
+}
+
+#chickenc {
+  position: absolute;
+  left: 295px;
+  top: 2210px;
+}
+
+#stabh {
+  position: absolute;
+  left: 500px;
+  top: 2410px;
+}
+
+#tips {
+  position: absolute;
+  left: 400px;
+  top: 2495px;
+}
+
+#tips_list {
+  position: absolute;
+  left: 0px;
+  top: 2510px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: green;
+}
+
+#jvh {
+  position: absolute;
+  right: 8px;
+  top: 2540px;
+}
+
+
+
+
+
