@@ -14,13 +14,19 @@ the_jinja_env = jinja2.Environment(
 
 # the handler section
 class MainHandler(webapp2.RequestHandler):
-  def get(self):  # for a get request
-	welcome_template = the_jinja_env.get_template('Templates/home.html')
-    self.response.write(welcome_template.render())   # the response
+	def get(self):  # for a get request
+		welcome_template = the_jinja_env.get_template('Templates/home.html')
+		self.response.write(welcome_template.render())   # the response
+
+class MapHandler(webapp2.RequestHandler):
+	def get(self):
+		map_template = the_jinja_env.get_template('Templates/gyms.html')
+		self.response.write(map_template.render())
 
 
 # the app configuration section	
 app = webapp2.WSGIApplication([
   #('/', MainPage),
   ('/', MainHandler),
+  ('/gyms', MapHandler),
   ], debug=True)
