@@ -7,9 +7,15 @@ handlers:
 - url: /styles
   static_dir: styles
 
+- url: /jsfiles
+  static_dir: jsfiles
+
+- url: /images
+  static_dir: images
+
+
 - url: /.*
   script: main.app
-
 
 libraries:
 - name: jinja2

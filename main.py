@@ -16,7 +16,7 @@ the_jinja_env = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
   def get(self):  # for a get request
 	welcome_template = the_jinja_env.get_template('Templates/home.html')
-    self.response.write(welcome_template.render())   # the response
+	self.response.write(welcome_template.render())   # the response
 
 
 # the app configuration section	
