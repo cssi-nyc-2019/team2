@@ -24,9 +24,12 @@ class MapHandler(webapp2.RequestHandler):
 		map_template = the_jinja_env.get_template('Templates/gyms.html')
 		self.response.write(map_template.render())
 
+<<<<<<< HEAD
 class HealthHandler(webapp2.RequestHandler):
 	def get(self):
 		health.template = the_jinja_env.get_template('Templates/health.html')
+=======
+>>>>>>> 10445b892feaeaca24e5571048e8d1b882eccd4d
 
 class RvHandler(webapp2.RequestHandler):
 	def get(self):  # for a get request
@@ -37,6 +40,10 @@ class WorkHandler(webapp2.RequestHandler):
   	def get(self):  # for a get request
 		work_template = the_jinja_env.get_template('Templates/workouts.html')
 		self.response.write(work_template.render())   # the response
+<<<<<<< HEAD
+=======
+
+>>>>>>> 10445b892feaeaca24e5571048e8d1b882eccd4d
 
 
 # the app configuration section	
