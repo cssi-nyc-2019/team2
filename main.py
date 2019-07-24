@@ -13,20 +13,37 @@ the_jinja_env = jinja2.Environment(
 # other functions should go above the handlers or in a separate file
 
 # the handler section
+
+class MainHandler(webapp2.RequestHandler):
+  	def get(self):  # for a get request
+		welcome_template = the_jinja_env.get_template('Templates/home.html')
+		self.response.write(welcome_template.render())   # the response
+
 class MapHandler(webapp2.RequestHandler):
 	def get(self):
 		map_template = the_jinja_env.get_template('Templates/gyms.html')
 		self.response.write(map_template.render())
 
-class MainHandler(webapp2.RequestHandler):
 <<<<<<< HEAD
-  def get(self):  # for a get request
-    self.response.write('Greetings!')  # the response
+class HealthHandler(webapp2.RequestHandler):
+	def get(self):
+		health.template = the_jinja_env.get_template('Templates/health.html')
 =======
+>>>>>>> 10445b892feaeaca24e5571048e8d1b882eccd4d
+
+class RvHandler(webapp2.RequestHandler):
+	def get(self):  # for a get request
+		rv_template = the_jinja_env.get_template('Templates/resources-videos.html')
+		self.response.write(rv_template.render())   # the response
+
+class WorkHandler(webapp2.RequestHandler):
   	def get(self):  # for a get request
-		welcome_template = the_jinja_env.get_template('Templates/home.html')
-		self.response.write(welcome_template.render())   # the responseb687dd05955f68251806cdab733489c7f0a9d898
->>>>>>> 471b61efeacec76ec1ec3afb85c736ca9141c6c0
+		work_template = the_jinja_env.get_template('Templates/workouts.html')
+		self.response.write(work_template.render())   # the response
+<<<<<<< HEAD
+=======
+
+>>>>>>> 10445b892feaeaca24e5571048e8d1b882eccd4d
 
 
 # the app configuration section	
@@ -34,4 +51,6 @@ app = webapp2.WSGIApplication([
   #('/', MainPage),
   ('/', MainHandler),
   ('/gyms.html', MapHandler),
+  ('/resources-videos.html', RvHandler),
+  ('/workouts.html', WorkHandler),
   ], debug=True)
