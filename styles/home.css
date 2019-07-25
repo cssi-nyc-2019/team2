@@ -95,9 +95,9 @@
 }
 
 .topnav {
-  background-color: #040b1a;
-  overflow: hidden;
-    }
+  background-color: #333;
+  /*overflow: hidden;*/
+  }
 
 /* Style the links inside the navigation bar */
     .topnav a {
