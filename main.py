@@ -122,6 +122,11 @@ class SecretHandler(webapp2.RequestHandler):
     # If either above condition is not met, this line will run instead:
     self.response.write("Sorry, this page is only for CSSI users.")
 
+class QuizHandler(webapp2.RequestHandler):
+	def get(self):
+		quiz_template = the_jinja_env.get_template('Templates/quiz.html')
+		self.response.write(quiz_template.render())   # the response
+
 
 # the app configuration section	
 app = webapp2.WSGIApplication([
@@ -131,4 +136,5 @@ app = webapp2.WSGIApplication([
   ('/resources-videos.html', RvHandler),
   ('/workouts.html', WorkHandler),
   ('/health.html', HealthHandler),
+  ('/quiz.html', QuizHandler),
   ], debug=True)
