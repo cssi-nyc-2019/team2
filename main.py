@@ -48,6 +48,7 @@ class MainHandler(webapp2.RequestHandler):
 						cssi_user.last_name,
 						email_address,
 						signout_link_html))
+			    # the response
 				# if the query wasn't successful, the variable will be empty, so this code
 				# will run instead.
 			else:
@@ -75,6 +76,8 @@ class MainHandler(webapp2.RequestHandler):
 			email=user.nickname())
 # Store that Entity in Datastore.
 		cssi_user.put()
+		meme_template = the_jinja_env.get_template('Templates/home2.html')
+		self.response.write(meme_template.render())
 		# profile = {
 		# "name": str(cssi_user.first_name)
 		# }
