@@ -3,7 +3,7 @@
 <head>
 	<title>Health Tips</title>
 	<link rel="stylesheet" href="health-style.css">
-	<script src="health.js"></script>
+	
 </head>
 <body>
 
@@ -14,13 +14,13 @@
 		  can lose weight fast while others lose slowly. You should find what best suits you, in order to have a healthier diet.
 	</font></center></text>
 
-<center><img src="images/health_foods.jpeg" alt="Healthy Foods" vspace="20" style="width:900px;height:500px"></center>
+<center><img src="images/health_foods.jpeg" alt="Healthy Foods" vspace="20" style="width:900px;height:500px;"></center>
 
 
 <h1><u><center>Unhealthy Foods</center></u></h1>
 	<text><font size=5><center>These are some foods that you might eat without knowing the consequences:<br></center></font></text>
 
-
+<img src="images/burger.jpeg">
 <text id="burgerc"><font size=5>The calories of a burger differ based on the pound percentage and the lean percentage.
 				   The calories of a single patty burger is around 250 calories.<br>
 </font></text>
@@ -71,17 +71,6 @@
 
 <text id="link"><center><font size=5>Eating healthy is part of your health, but not the entire process.<a href="https://www.cnn.com/health">You can find more health stories here.</a></font></center></text>
 
-<text id="btn_sec"><center><font size=5>Click the button to see what food falls under a picked amount of calories!
-</font></center></text>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,24 +81,49 @@
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-content">
-    <a href="#">100</a>
-    <a href="#">300</a>
-    <a href="#">500</a>
+    <button id = "myBtn" >100</button> <br>
+    <button id = "myBtn2">300</button> <br>
+    <button id = "myBtn3">500</button>
   </div>
+</div>
+
+
+<!-- Trigger/Open The Modal
+<button id="myBtn">Open Modal</button>-->
+
+<!--The Modal-->
+<div id="myModal" class="modal">
+
+   <!--Modal content-->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><font size=5>Oranges <br>Cherry Tomatoes <br>Banana <br>Rasberries</font></p>
+  </div>
+
+</div>
+<!-- 300 Calories -->
+<div id="myModal2" class="modal">
+
+<div class="modal-content">
+    <span class="close2">&times;</span>
+    <p id="facts2s"><font size=5>Cereal <br>Oatmeal <br>Baked Potatoe <br>Rasberries</font></p>
+  </div>
+
+</div>
+<!-- 500 Calories -->
+<div id="myModal3" class="modal">
+
+<div class="modal-content">
+    <span class="close3">&times;</span>
+    <p id="facts3"><font size=5>Fast Food Burger <br>Waffles <br>4 Bacon Strips <br>Steak</font></p>
+  </div>
+
 </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+	<script src="health.js"></script>
 </body>
 </html>

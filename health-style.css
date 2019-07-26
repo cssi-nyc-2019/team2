@@ -10,7 +10,7 @@ text {
 
 
 body {
-	
+	background-color: #95caf5;
 }
 
 #burger {
@@ -153,20 +153,23 @@ body {
 
 
 
- /*Dropdown Button */
+ /*Dropdown Button*/
 .btn {
-  background-color: #2196F3;
+  background-color: green;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   outline: none;
+  
 }
 
- /*The container <div> - needed to position the dropdown content*/ 
+ /*The container <div> - needed to position the dropdown content*/
 .dropdown {
   position: absolute;
   display: inline-block;
+  position: absolute;
+  top: 1023px;
 }
 
  /*Dropdown Content (Hidden by Default)*/
@@ -186,17 +189,17 @@ body {
   display: block;
 }
 
- /*Change color of dropdown links on hover*/ 
+ /*Change color of dropdown links on hover*/
 .dropdown-content a:hover {background-color: #ddd}
 
- /*Show the dropdown menu on hover*/ 
+ /*Show the dropdown menu on hover*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
  /*Change the background color of the dropdown button when the dropdown content is shown*/ 
 .btn:hover, .dropdown:hover .btn  {
-  background-color: #0b7dda;
+  background-color: green;
 }
 
 
@@ -212,3 +215,40 @@ body {
 
 
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
