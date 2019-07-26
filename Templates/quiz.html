@@ -3,7 +3,7 @@
 <head>
 	<title>Health Tips</title>
 	<script src="health.js"></script>
-	<link rel="stylesheet" href="styles/health-style.css">
+	<link rel="stylesheet" href="styles/quiz.css">
 	    <style>
 
       h2 {
@@ -60,7 +60,7 @@
 
 <div id="quiz-wrapper">
     <div class="question1">
-      <h2>You should aim to exercise every day.<br>You need at least:</h2>
+      <h2>How long is an ideal workout?</h2>
         <input type="radio" name="q1" class="twenty">
         <label id="q1aa" for="q1a">20 minutes of physical activity</label><br>
 
@@ -73,50 +73,76 @@
     </div>
 
     <div class="question2">
-      <h2 id= "">Which food would you choose?</h2>
-        <input type="radio" name="q2" class="dSchrute">
-        <label id="q2aa" for="q1a">Pickled beets</label><br>
+      <h2 id= "">What muscle group is targeted by squats?</h2>
+        <input type="radio" name="q2" class="triceps">
+        <label id="q2aa" for="q1a">Triceps</label><br>
 
-        <input type="radio" name="q2" class="mScott">
-        <label id="q2ab" for="q1b">Freshly grilled bacon from a George Foreman Grill</label><br>
+        <input type="radio" name="q2" class="lats">
+        <label id="q2ab" for="q1b">Lats</label><br>
 
-        <input type="radio" name="q2" class="sHudson">
-        <label id="q2ac"for="q1c">Soft Pretzels</label><br>
+        <input type="radio" name="q2" class="quads">
+        <label id="q2ac"for="q1c">Quads</label><br>
 
-        <input type="radio" name="q2" class="kMalone">            
-        <label id="q2ad" for="q1d">M&M's</label><br>
+        <input type="radio" name="q2" class="abs">            
+        <label id="q2ad" for="q1d">Abs</label><br>
     </div>
 
     <div class="question3">
-      <h2>Which food would you choose?</h2>
+      <h2>Which gym has the most locations in the US?</h2>
         <input type="radio" name="q3" class="dSchrute">
-        <label id="q3aa"for="q1a">Pickled beets</label><br>
+        <label id="q3aa"for="q1a">Planet Fitness</label><br>
 
         <input type="radio" name="q3" class="mScott">
-        <label id="q3ab"for="q1b">Freshly grilled bacon from a George Foreman Grill</label><br>
+        <label id="q3ab"for="q1b">YMCA</label><br>
 
         <input type="radio" name="q3" class="sHudson">
-        <label id="q3ac"for="q1c">Soft Pretzels</label><br>
+        <label id="q3ac"for="q1c">Crunch Fitness</label><br>
 
         <input type="radio" name="q3" class="kMalone">            
-        <label id="q3ad" for="q1d">M&M's</label><br>
+        <label id="q3ad" for="q1d">24 hour Fitness</label><br>
     </div> 
 
     <div class="question4">
-      <h2>Which food would you choose?</h2>
-        <input type="radio" name="q4" class="dSchrute">
-        <label id="q4aa" for="q1a">Pickled beets</label><br>
+      <h2>What is the resting heart rate of a well-trained athlete??</h2>
+        <input type="radio" name="q4" class="four">
+        <label id="q4aa" for="q1a">40</label><br>
 
-        <input type="radio" name="q4" class="mScott">
-        <label id="q4ab" for="q1b">Freshly grilled bacon from a George Foreman Grill</label><br>
+        <input type="radio" name="q4" class="zero">
+        <label id="q4ab" for="q1b">0</label><br>
 
-        <input type="radio" name="q4" class="sHudson">
-        <label id="q4ac" for="q1c">Soft Pretzels</label><br>
+        <input type="radio" name="q4" class="sixfive">
+        <label id="q4ac" for="q1c">65</label><br>
 
-        <input type="radio" name="q4" class="kMalone">            
-        <label id="q4ad"for="q1d">M&M's</label><br>
+        <input type="radio" name="q4" class="nine">            
+        <label id="q4ad"for="q1d">90</label><br>
     </div>
+
+    <div class="question5">
+      <h2>Who is the biggest Instagram fitness influencer?</h2>
+        <input type="radio" name="q4" class="spanda">
+        <label id="q4aa" for="q1a">Simeon Panda</label><br>
+
+        <input type="radio" name="q4" class="mlewin">
+        <label id="q4ab" for="q1b">Micheal Lewin</label><br>
+
+        <input type="radio" name="q4" class="ldrain">
+        <label id="q4ac" for="q1c">Lauren Drain</label><br>
+
+        <input type="radio" name="q4" class="jwicks">            
+        <label id="q4ad"for="q1d">Joe Wicks</label><br>
+    </div>
+
+    <br>
 </div>
+
+  <div id= "responseContainer">
+    <button class="button" = "submit-form" type= "submit" >Submit</button>
+  </div> 
+
+  <div id= "result"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src= "script.js"></script>
 
 </body>
 </html>
