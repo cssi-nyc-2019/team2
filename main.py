@@ -65,8 +65,9 @@ class MainHandler(webapp2.RequestHandler):
 		else:
 			# If the user isn't logged in...
 			login_url = users.create_login_url('/')
-			login_html_element = '<a href="%s">Sign in</a>' % login_url
+			login_html_element = '<a id="signin" href="%s">Sign in</a>' % login_url
 			self.response.write('Please log in.<br>' + login_html_element)
+
 	def post(self):
 		user = users.get_current_user()
 # Create a new CSSI user.
