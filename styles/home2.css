@@ -5,6 +5,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  justify-content: center;
 }
 
 /* Hide the images by default */
@@ -57,6 +58,7 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  left: ;
 }
 
 /* The dots/bullets/indicators */
@@ -119,6 +121,11 @@
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+#slide{
+  display: flex;
+  justify-content: center;
 }
 
 
