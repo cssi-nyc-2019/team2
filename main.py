@@ -21,6 +21,7 @@ class CssiUser(ndb.Model):
   first_name = ndb.StringProperty()
   last_name = ndb.StringProperty()
   email = ndb.StringProperty()
+  print(first_name)
 
 
 
@@ -40,9 +41,14 @@ class MainHandler(webapp2.RequestHandler):
 			cssi_user = CssiUser.query().filter(CssiUser.email == email_address).get()
 			# If the query is successful, the variable will have a user in it, so the
 			# following code will run.
-			if cssi_user:
-				self.response.write(
-				"Looks like you're registered. Thanks for using our site!")
+			if cssi_user :
+				self.response.write('''
+					Welcome %s %s (%s)! <br> %s <br>''' % (
+						cssi_user.first_name,
+						cssi_user.last_name,
+						email_address,
+						signout_link_html))
+			    # the response
 				# if the query wasn't successful, the variable will be empty, so this code
 				# will run instead.
 			else:
@@ -70,9 +76,15 @@ class MainHandler(webapp2.RequestHandler):
 			email=user.nickname())
 # Store that Entity in Datastore.
 		cssi_user.put()
-		# Show confirmation to the user. Include a link back to the index.
-		self.response.write('Thanks for signing up, %s! <br><a href="/">Home</a>' %
-		cssi_user.first_name)
+		meme_template = the_jinja_env.get_template('Templates/home2.html')
+		self.response.write(meme_template.render())
+		# profile = {
+		# "name": str(cssi_user.first_name)
+		# }
+
+		# # Show confirmation to the user. Include a link back to the index.
+		# profile_template = the_jinja_env.get_template('Templates/profile.html')
+		# self.response.write(profile_template.render())   # the response
 
 
 
@@ -110,6 +122,11 @@ class SecretHandler(webapp2.RequestHandler):
     # If either above condition is not met, this line will run instead:
     self.response.write("Sorry, this page is only for CSSI users.")
 
+class QuizHandler(webapp2.RequestHandler):
+	def get(self):
+		quiz_template = the_jinja_env.get_template('Templates/quiz.html')
+		self.response.write(quiz_template.render())   # the response
+
 
 # the app configuration section	
 app = webapp2.WSGIApplication([
@@ -119,4 +136,5 @@ app = webapp2.WSGIApplication([
   ('/resources-videos.html', RvHandler),
   ('/workouts.html', WorkHandler),
   ('/health.html', HealthHandler),
+  ('/quiz.html', QuizHandler),
   ], debug=True)
