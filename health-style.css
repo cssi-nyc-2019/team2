@@ -118,7 +118,7 @@ body {
 #tips_list {
   position: absolute;
   left: 0px;
-  top: 2510px;
+  top: 2580px;
   font-family:Arial, Helvetica, sans-serif;
   color: green;
 }
@@ -132,7 +132,7 @@ body {
 #link {
   position: absolute;
   left: 200px;
-  top: 3000px;
+  top: 3600px;
 }
 
 #btn_sec {
@@ -141,13 +141,29 @@ body {
   top: 3200px;
 }
 
+#eath {
+  position: absolute;
+  right: 220px;
+  top: 2540px;
+}
 
+#eath2 {
+  position: absolute;
+  right: 8px;
+  top: 2777px;
+}
 
+#eath3 {
+  position: absolute;
+  right: 358px;
+  top: 2777px;
+}
 
-
-
-
-
+#goodh {
+  position: absolute;
+  left: 240px;
+  top: 3000px;
+}
 
 
 
